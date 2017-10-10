@@ -20,5 +20,20 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
+
+		vector<vector<char>> allLines;
+		bool clearCanvas;
+		bool playheadMoving;
+
+		int movePlayhead;
+		int numLines;
+		int lengthofLine;
+		int currentLine;
+
+		int lineNumber;
+		int currentLineLength;
+		ofTrueTypeFont myFont;
+
+		ofImage screenGrab;
+		vector<char> charInput;
 };
